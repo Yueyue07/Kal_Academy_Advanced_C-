@@ -49,13 +49,16 @@ namespace InterfaceDemo
                 },
             };
 
-            //List(contacts);
-            //List(pubs);
-            Console.WriteLine(contacts[0].CompareTo(contacts[1]));
+            contacts[0].GetListName();
+            pubs[0].GetListName();
+            
+            List(contacts);
+            List(pubs);
+            Compare(contacts);
             Console.ReadLine();
         }
 
-        public static void List(IListable[] items)
+        public static void List(IListable[] items) // only strict to IListable part of class
         {
             foreach (var item in items)
             {
@@ -65,6 +68,11 @@ namespace InterfaceDemo
                 }
             }
   
+        }
+
+        public static void Compare(IComparable[] items)
+        {
+            Console.WriteLine(items[0].CompareTo(items[1]));   
         }
     }
 }

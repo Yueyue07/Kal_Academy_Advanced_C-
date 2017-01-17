@@ -14,15 +14,25 @@ namespace AbstractDemo
             // var muscician = new Musician();
 
             Console.WriteLine("**********");
+            Pianist p = new Pianist();
+            p.Name = "Ruby";
+            p.Instrument = "Song";
+            p.Experience = 15;
+            p.Play();
+            p.Tune();
 
-            //Pianist p = new Pianist();
-            //p.Name = "Ruby";
-            //p.Instrument = "Song";
-            //p.Experience = 15;
-            //p.Play();
 
-            KeyboardPlayer kb = new KeyboardPlayer();
-            kb.Play();
+            KeyboardPlayer kp = new KeyboardPlayer();
+            kp.Play();
+            kp.Tune();
+
+
+
+
+            // polymorphism
+            Musician m = kp; // my keyboard player is musician
+            m.Play();
+            m.Tune();
             Console.ReadLine();
         }
     }

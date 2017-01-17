@@ -14,10 +14,18 @@ namespace AbstractDemo
             Console.WriteLine("I am constructing the KeyboardPlayer");
         }
         #endregion
+
+        #region methods
         public override void Play() // overwrite Painist instead Mucisian
         {
             //base.Play();
-            //Console.WriteLine("I am playing KeyBoard");
+            Console.WriteLine("I am playing KeyBoard");
         }
+
+        public override void Tune()
+        {
+            Console.WriteLine("I am tunning the keyboard");
+        }
+        #endregion
     }
 }

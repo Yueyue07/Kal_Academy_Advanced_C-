@@ -14,7 +14,8 @@ namespace InterfaceDemo
 
         public string Address { get; set; }
 
-        public string[] ColumnNames
+        // ONLY expose to IListable Class
+        string[] IListable.ColumnNames
         {
             get
             {
@@ -25,6 +26,11 @@ namespace InterfaceDemo
                     Address
                 };
             }
+        }
+
+        public void GetListName()
+        {
+            Console.WriteLine("List Name is: Contact");
         }
 
         public int CompareTo(object obj)

@@ -22,6 +22,12 @@ namespace AbstractDemo
         #endregion
 
         #region Method
+        public void Tune()
+        {
+            Console.WriteLine("Tuning the instrument!");
+        }
+
+        // abstract force inherited class to override
         public abstract void Play();
         #endregion
     }

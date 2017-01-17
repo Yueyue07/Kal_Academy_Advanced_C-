@@ -14,7 +14,7 @@ namespace InterfaceDemo
 
         public int Year { get; set; }
 
-        public string[] ColumnNames
+        string[] IListable.ColumnNames
         {
             get
             {
@@ -25,6 +25,11 @@ namespace InterfaceDemo
                     Year.ToString()
                 };
             }
+        }
+
+        public void GetListName()
+        {
+            Console.WriteLine("List Name is Publication");
         }
     }
 }

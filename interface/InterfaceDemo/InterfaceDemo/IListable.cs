@@ -8,6 +8,10 @@ namespace InterfaceDemo
 {
     public interface IListable
     {
+        // property
         string[] ColumnNames { get;}
+        // method
+        void GetListName();
     }
+
 }

@@ -24,6 +24,12 @@ namespace AbstractDemo
         {
             Console.WriteLine("I am playing Piano");
         }
+
+        new public virtual void Tune()
+        {
+            Console.WriteLine("I am tuning a piano");
+        }
+
         #endregion
     }
 }
