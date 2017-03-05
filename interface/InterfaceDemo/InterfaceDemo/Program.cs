@@ -54,6 +54,8 @@ namespace InterfaceDemo
             
             List(contacts);
             List(pubs);
+  
+            Console.WriteLine(contacts[0].CompareTo(contacts[1]));
             Compare(contacts);
             Console.ReadLine();
         }

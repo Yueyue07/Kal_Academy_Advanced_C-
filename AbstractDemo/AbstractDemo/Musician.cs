@@ -29,6 +29,10 @@ namespace AbstractDemo
 
         // abstract force inherited class to override
         public abstract void Play();
+
+        public virtual void Position() {
+            Console.WriteLine("Musician Level");
+        }
         #endregion
     }
 }

@@ -15,7 +15,7 @@ namespace InterfaceDemo
         public string Address { get; set; }
 
         // ONLY expose to IListable Class
-        string[] IListable.ColumnNames
+       string[] IListable.ColumnNames
         {
             get
             {

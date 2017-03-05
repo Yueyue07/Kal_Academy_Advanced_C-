@@ -20,9 +20,10 @@ namespace AbstractDemo
         #endregion
 
         #region Methods
+        // Has to Override Play Method, because it is inherited from abastract class' abstract method
         public override void Play()
         {
-            Console.WriteLine("I am playing Piano");
+            Console.WriteLine("i am playing piano");
         }
 
         new public virtual void Tune()
@@ -30,6 +31,11 @@ namespace AbstractDemo
             Console.WriteLine("I am tuning a piano");
         }
 
+        public override void Position()
+        {
+            //base.Position();
+            Console.WriteLine("Pianist Level");
+        }
         #endregion
     }
 }
